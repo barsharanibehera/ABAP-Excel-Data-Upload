@@ -1,0 +1,22 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: { typeName: 'Imported Record',
+                typeNamePlural: 'Imported Records' }
+}
+annotate view ZC_DATA_EXCEL with
+{
+  @UI.lineItem: [ { position: 10, label: 'Material ID' } ]
+  Id;
+
+  @UI.lineItem: [ { position: 20, label: 'Category' } ]
+  Category;
+
+  @UI.lineItem: [ { position: 30, label: 'Material Type' } ]
+  MatType;
+
+  @UI.lineItem: [ { position: 40, label: 'Description' } ]
+  Description;
+
+  @UI.lineItem: [ { position: 50, label: 'Unit of Measure' } ]
+  Unit;
+}
